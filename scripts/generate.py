@@ -110,6 +110,8 @@ def _generate(api: dict, spec: Path, package_dir: Path) -> None:
         command.append("--nullable-fields")
     if api.get("operation_names"):
         command += ["--operation-names", str(ROOT / api["operation_names"])]
+    if api.get("pagination"):
+        command += ["--pagination", str(ROOT / api["pagination"])]
     subprocess.run(command, check=True)
 
 

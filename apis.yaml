@@ -15,3 +15,5 @@ apis:
     # written by generate.py from the spec's x-stripeOperations on every run, so the methods
     # follow Stripe's SDKs: stripe.customers.create(), stripe.issuing.cards.list()
     operation_names: specs/stripe.names.json
+    # list and search operations gain <name>_all methods iterating every page
+    pagination: specs/stripe.pagination.yaml

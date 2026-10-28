@@ -37,6 +37,8 @@ customer = stripe.customers.models.create(  # Customer
 print(customer.id, customer.address.city)
 
 recent = stripe.customers.models.list(created={"gte": 1700000000}, limit=10, expand=["data.tax"])
+for customer in stripe.customers.models.list_all(limit=100):  # every page, fetched as you go
+    print(customer.email)
 session = stripe.checkout.sessions.models.create(
     body={
         "mode": "payment",
@@ -49,6 +51,7 @@ intent = await stripe.payment_intents.models.aio.retrieve("pi_123")
 
 - **Request bodies** are sent the way Stripe expects, as form-encoded data with nested values: `metadata[order_id]=6735`, `line_items[][price]=price_123`. Filters such as `created={"gte": ...}` go out as `created[gte]=...`, and `expand=[...]` as `expand[]=...`.
 - **Sections follow Stripe's SDKs:** `stripe.customers`, `stripe.customers.balance_transactions`, `stripe.payment_intents`, `stripe.issuing.cards`, `stripe.billing.meters`, `stripe.test_helpers.test_clocks`, and so on: 75 top-level sections.
+- **Pagination:** every list operation has a `_all` twin (`customers.list_all`, `invoices.list_all`, `customers.search_all` …) taking the same arguments and iterating every page's items: it follows `has_more` and `starting_after`, or `next_page` for searches. `async for` works through `.aio`, `.pages()` gives whole pages, and `itertools.islice` or `break` stops early. Which operations get one is set by [`specs/stripe.pagination.yaml`](specs/stripe.pagination.yaml).
 - **File uploads** go to `files.stripe.com`, as Stripe requires: `stripe.files.models.create(body={"purpose": "dispute_evidence", "file": ("evidence.png", data, "image/png")})`.
 - **Errors** raise `apiroute.UnexpectedResponse`. Its `.response` carries Stripe's error object: `error.response.json()["error"]["code"]`.
 

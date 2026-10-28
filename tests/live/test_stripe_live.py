@@ -4,6 +4,7 @@ objects, the files host, async, and typed models validating real responses."""
 import asyncio
 import struct
 import time
+import uuid
 import zlib
 
 import pytest
@@ -119,3 +120,14 @@ def test_an_error_is_an_unexpected_response(stripe):
         stripe.customers.retrieve(f"cus_does_not_exist_{int(time.time())}")
     assert raised.value.response.status_code == 404
     assert raised.value.response.json()["error"]["code"] == "resource_missing"
+
+
+def test_list_all_pages_past_the_first_page(stripe):
+    email = f"paging-{uuid.uuid4().hex[:12]}@example.com"
+    created = [stripe.customers.create(body={"email": email})["id"] for _ in range(3)]
+    try:
+        customers = list(stripe.customers.models.list_all(limit=1, email=email))
+        assert sorted(c.id for c in customers) == sorted(created)  # three pages of one
+    finally:
+        for customer_id in created:
+            stripe.customers.delete(customer_id)

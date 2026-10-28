@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Office/Business :: Financial",
     "Typing :: Typed",
 ]
-dependencies = ["apiroute>=2.4.2", "pydantic>=2.6"]
+dependencies = ["apiroute>=2.5.0", "pydantic>=2.6"]
 
 [project.urls]
 Homepage = "https://github.com/dougyouch/stripe-apiroute"
@@ -32,7 +32,7 @@ Issues = "https://github.com/dougyouch/stripe-apiroute/issues"
 Changelog = "https://github.com/dougyouch/stripe-apiroute/blob/main/CHANGELOG.md"
 
 [dependency-groups]
-dev = ["apiroute[codegen]>=2.4.2", "pytest>=8", "ruff>=0.6"]
+dev = ["apiroute[codegen]>=2.5.0", "pytest>=8", "ruff>=0.6"]
 
 [build-system]
 requires = ["hatchling", "hatch-vcs"]
