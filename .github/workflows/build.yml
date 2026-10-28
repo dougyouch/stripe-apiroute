@@ -1,0 +1,63 @@
+name: Build
+
+# Keeps the client current: fetches Stripe's latest OpenAPI spec, upgrades apiroute,
+# regenerates, checks (live too, in Stripe's test mode), and commits any difference to main.
+# A changed spec is committed as feat(specs) (a minor release); output that changed only
+# because apiroute did, as fix(codegen) (a patch).
+on:
+  schedule:
+    - cron: "17 8 * * 1" # Mondays 08:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit regenerated clients
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.14"
+      - name: Use the newest apiroute
+        run: uv lock --upgrade-package apiroute
+      - run: uv sync
+      - name: Fetch the latest spec and regenerate
+        run: uv run python scripts/generate.py --fetch
+      - name: Check
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run pytest
+      # Requests and typed models against what Stripe actually accepts and sends, in test
+      # mode, before anything is committed. Skipped without the STRIPE_TEST_SECRET_KEY secret
+      # (a test-mode key; any other key is refused).
+      - name: Live tests
+        env:
+          STRIPE_TEST_SECRET_KEY: ${{ secrets.STRIPE_TEST_SECRET_KEY }}
+        run: uv run pytest tests/live
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Specs and generated clients are unchanged."
+            exit 0
+          fi
+          specs=$(git status --porcelain -- specs | awk '{print $2}' | xargs -r -n1 basename | sed 's/\..*$//' | sort -u | paste -sd ' ' -)
+          if [ -n "$specs" ]; then
+            subject="feat(specs): update the client from Stripe's latest API spec"
+            body="Changed specs: $specs"
+          else
+            version=$(uv run python -c "import importlib.metadata as m; print(m.version('apiroute'))")
+            subject="fix(codegen): regenerate clients with apiroute $version"
+            body="No spec changed; the generated code did, with the newer apiroute."
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "$subject" -m "$body"
+          git push

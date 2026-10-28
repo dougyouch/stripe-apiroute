@@ -1,0 +1,103 @@
+name: Release
+
+# Every push to main is a release. CI runs first; then scripts/next_release.py works out the
+# version from the conventional commits since the last tag (feat: minor, ! or BREAKING CHANGE:
+# major, anything else: patch). A release commit adds those commits to CHANGELOG.md and is
+# tagged, built (hatch-vcs reads the version from the tag), published to PyPI and given a
+# GitHub release with the same notes. Every step skips what's already done, so rerunning a
+# failed release finishes it, and a run on a commit that's already released changes nothing.
+# It also runs after Build, whose commits (pushed with GITHUB_TOKEN) trigger no push event.
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  ci:
+    # after Build only when it succeeded (a failed Build committed nothing)
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    needs: ci
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/stripe-apiroute/
+    permissions:
+      contents: write # the tag and the GitHub release
+      id-token: write # PyPI trusted publishing (OIDC)
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # every commit and tag, for the version
+      - uses: astral-sh/setup-uv@v6
+
+      # A rerun of a release whose tag exists finishes that release from its tag. A push that
+      # newer pushes have overtaken is left to them: the newest releases every commit since
+      # the last tag, so nothing is skipped and main isn't pushed to from behind.
+      - name: Work out the version
+        run: |
+          version=$(python3 scripts/next_release.py)
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          echo "TAG=v$version" >> "$GITHUB_ENV"
+          python3 scripts/next_release.py --notes > "$RUNNER_TEMP/notes.md"
+          if git rev-parse -q --verify "refs/tags/v$version" > /dev/null; then
+            echo "STATE=tagged" >> "$GITHUB_ENV"
+          elif [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD)" ]; then
+            echo "STATE=overtaken" >> "$GITHUB_ENV"
+            echo "::notice::main has moved on; the newer push releases this commit with it."
+          else
+            echo "STATE=new" >> "$GITHUB_ENV"
+          fi
+
+      # The release commit adds the notes to CHANGELOG.md; the tag goes on it, so the package
+      # carries its own changelog entry. Pushed with GITHUB_TOKEN, it starts no workflow.
+      - name: Commit the changelog and tag
+        if: env.STATE == 'new'
+        run: |
+          python3 scripts/next_release.py --changelog CHANGELOG.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "chore(release): $TAG" CHANGELOG.md
+          git tag "$TAG"
+          git push --atomic origin HEAD:main "$TAG"
+
+      - name: Check out the tag
+        if: env.STATE == 'tagged'
+        run: git checkout "$TAG"
+
+      - name: Build
+        if: env.STATE != 'overtaken'
+        run: uv build
+
+      - name: Publish to PyPI
+        if: env.STATE != 'overtaken'
+        run: |
+          if curl -sf "https://pypi.org/pypi/stripe-apiroute/$VERSION/json" > /dev/null; then
+            echo "stripe-apiroute $VERSION is already published"
+          else
+            uv publish --trusted-publishing always
+          fi
+
+      - name: GitHub release
+        if: env.STATE != 'overtaken'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" dist/* --clobber
+          else
+            gh release create "$TAG" dist/* --title "$TAG" --notes-file "$RUNNER_TEMP/notes.md"
+          fi

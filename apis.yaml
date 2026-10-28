@@ -1,0 +1,17 @@
+# The API this package generates a client for. scripts/generate.py reads it; edit it and
+# regenerate (`uv run python scripts/generate.py --fetch`), never the generated code.
+package: stripe_apiroute
+apis:
+  - name: stripe
+    title: Stripe API
+    format: openapi
+    # the SDK variant: every operation named by x-stripeOperations, as Stripe's SDKs are, and
+    # without the 53 legacy duplicates the plain spec3.json also lists
+    spec: https://raw.githubusercontent.com/stripe/openapi/master/openapi/spec3.sdk.json
+    docs: https://docs.stripe.com/api
+    module: api
+    client: StripeApi
+    base_class: stripe_apiroute.auth:StripeAuth
+    # written by generate.py from the spec's x-stripeOperations on every run, so the methods
+    # follow Stripe's SDKs: stripe.customers.create(), stripe.issuing.cards.list()
+    operation_names: specs/stripe.names.json
