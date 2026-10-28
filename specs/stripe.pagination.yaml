@@ -1,0 +1,12 @@
+# Which operations get a paginated <name>_all method, and how they page. Rules are tried in
+# order, and generate.py prints how many operations each matched.
+- name: lists
+  # {"data": [...], "has_more": true}: the next page starts after the last item's id
+  has_parameter: [starting_after]
+  response: {has: [data, has_more]}
+  paginate: {type: item_cursor}
+- name: searches
+  # {"data": [...], "has_more": true, "next_page": "..."}: next_page is the next page's token
+  has_parameter: [page]
+  response: {has: [data, has_more, next_page]}
+  paginate: {type: cursor, param: page, token: next_page, items: data}
