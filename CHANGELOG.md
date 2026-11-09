@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.1](https://github.com/dougyouch/stripe-apiroute/compare/v0.3.0...v0.3.1) (2026-11-09)
+
+### Fixes
+
+- fix(codegen): regenerate clients with apiroute 2.10.0 (0ef264e)
+
 ## [0.3.0](https://github.com/dougyouch/stripe-apiroute/compare/v0.2.0...v0.3.0) (2026-11-02)
 
 ### Features
