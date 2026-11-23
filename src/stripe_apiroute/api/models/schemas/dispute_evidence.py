@@ -22,7 +22,7 @@ class DisputeEvidence(BaseModel):
     access_activity_log: str | None
 
     # Appeal evidence submitted during the appeal stage.
-    appeal: DisputeAppeal | None = None
+    appeal: DisputeAppeal | None
 
     # The billing address provided by the customer.
     billing_address: str | None

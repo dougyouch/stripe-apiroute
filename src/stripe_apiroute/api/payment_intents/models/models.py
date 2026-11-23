@@ -62,6 +62,90 @@ if TYPE_CHECKING:
     from .schemas.post_payment_intents_intent_capture_request_payment_details_option1 import (
         PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1,
     )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_distance import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drivers_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drop_off import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drop_off_address import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_pickup import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_pickup_address import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_vehicle import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_accommodation import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_guests_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_host import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHost,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_host_address import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem,
+    )
     from .schemas.post_payment_intents_intent_capture_request_transfer_data import (
         PostPaymentIntentsIntentCaptureRequestTransferData,
     )
@@ -127,6 +211,90 @@ if TYPE_CHECKING:
     )
     from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1 import (
         PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_distance import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drivers_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drop_off import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drop_off_address import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_pickup import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_pickup_address import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_vehicle import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_accommodation import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_guests_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_host import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHost,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_host_address import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem,
     )
     from .schemas.post_payment_intents_intent_confirm_request_payment_method_data import (
         PostPaymentIntentsIntentConfirmRequestPaymentMethodData,
@@ -534,6 +702,90 @@ if TYPE_CHECKING:
     from .schemas.post_payment_intents_intent_request_payment_details_option1 import (
         PostPaymentIntentsIntentRequestPaymentDetailsOption1,
     )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_distance import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drivers_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drop_off import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drop_off_address import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_pickup import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_pickup_address import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_vehicle import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1Item,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_accommodation import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_affiliate import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_guests_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_host import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHost,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_host_address import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_insurances_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_discounts import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_tax import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem,
+    )
     from .schemas.post_payment_intents_intent_request_payment_method_data import (
         PostPaymentIntentsIntentRequestPaymentMethodData,
     )
@@ -908,6 +1160,90 @@ if TYPE_CHECKING:
     from .schemas.post_payment_intents_request_payment_details import (
         PostPaymentIntentsRequestPaymentDetails,
     )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1Item,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_affiliate import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_distance import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDistance,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drivers_item import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drivers_item_date_of_birth import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItemDateOfBirth,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drop_off import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOff,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drop_off_address import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOffAddress,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_insurances_item import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_pickup import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickup,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_pickup_address import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickupAddress,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_discounts import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_tax import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTaxTaxItemsItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_vehicle import (
+        PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemVehicle,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1Item,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_accommodation import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAccommodation,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_affiliate import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAffiliate,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_guests_item import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemGuestsItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_host import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHost,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_host_address import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHostAddress,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_insurances_item import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemInsurancesItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotal,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_discounts import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalDiscounts,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_extra_charges_item import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalExtraChargesItem,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_tax import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTax,
+    )
+    from .schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_tax_tax_items_item import (
+        PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTaxTaxItemsItem,
+    )
     from .schemas.post_payment_intents_request_payment_method_data import (
         PostPaymentIntentsRequestPaymentMethodData,
     )
@@ -1250,6 +1586,34 @@ __all__ = [
     "PostPaymentIntentsIntentCaptureRequestHooksInputs",
     "PostPaymentIntentsIntentCaptureRequestHooksInputsTax",
     "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1Item",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1Item",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHost",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotal",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem",
     "PostPaymentIntentsIntentCaptureRequestTransferData",
     "PostPaymentIntentsIntentConfirmRequest",
     "PostPaymentIntentsIntentConfirmRequestAmountDetailsOption1",
@@ -1272,6 +1636,34 @@ __all__ = [
     "PostPaymentIntentsIntentConfirmRequestMandateDataOption3CustomerAcceptance",
     "PostPaymentIntentsIntentConfirmRequestMandateDataOption3CustomerAcceptanceOnline",
     "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1Item",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1Item",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHost",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotal",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem",
     "PostPaymentIntentsIntentConfirmRequestPaymentMethodData",
     "PostPaymentIntentsIntentConfirmRequestPaymentMethodDataAcssDebit",
     "PostPaymentIntentsIntentConfirmRequestPaymentMethodDataAuBecsDebit",
@@ -1408,6 +1800,34 @@ __all__ = [
     "PostPaymentIntentsIntentRequestHooksInputs",
     "PostPaymentIntentsIntentRequestHooksInputsTax",
     "PostPaymentIntentsIntentRequestPaymentDetailsOption1",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1Item",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1Item",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHost",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotal",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax",
+    "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem",
     "PostPaymentIntentsIntentRequestPaymentMethodData",
     "PostPaymentIntentsIntentRequestPaymentMethodDataAcssDebit",
     "PostPaymentIntentsIntentRequestPaymentMethodDataAuBecsDebit",
@@ -1534,6 +1954,34 @@ __all__ = [
     "PostPaymentIntentsRequestMandateDataOption1CustomerAcceptance",
     "PostPaymentIntentsRequestMandateDataOption1CustomerAcceptanceOnline",
     "PostPaymentIntentsRequestPaymentDetails",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1Item",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemAffiliate",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDistance",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItem",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItemDateOfBirth",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOff",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOffAddress",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickup",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickupAddress",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotal",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTax",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTaxTaxItemsItem",
+    "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemVehicle",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1Item",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAccommodation",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAffiliate",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemGuestsItem",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHost",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHostAddress",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemInsurancesItem",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotal",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalDiscounts",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalExtraChargesItem",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTax",
+    "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTaxTaxItemsItem",
     "PostPaymentIntentsRequestPaymentMethodData",
     "PostPaymentIntentsRequestPaymentMethodDataAcssDebit",
     "PostPaymentIntentsRequestPaymentMethodDataAuBecsDebit",
@@ -1667,6 +2115,34 @@ __getattr__, __dir__ = lazy_exports(
         "PostPaymentIntentsIntentCaptureRequestHooksInputs": ".schemas.post_payment_intents_intent_capture_request_hooks_inputs",
         "PostPaymentIntentsIntentCaptureRequestHooksInputsTax": ".schemas.post_payment_intents_intent_capture_request_hooks_inputs_tax",
         "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1Item": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_distance",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drivers_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drop_off",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_drop_off_address",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_pickup",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_pickup_address",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_car_rental_data_option1_item_vehicle",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1Item": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_accommodation",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_guests_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHost": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_host",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_host_address",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotal": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentCaptureRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_capture_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item",
         "PostPaymentIntentsIntentCaptureRequestTransferData": ".schemas.post_payment_intents_intent_capture_request_transfer_data",
         "PostPaymentIntentsIntentConfirmRequest": ".schemas.post_payment_intents_intent_confirm_request",
         "PostPaymentIntentsIntentConfirmRequestAmountDetailsOption1": ".schemas.post_payment_intents_intent_confirm_request_amount_details_option1",
@@ -1689,6 +2165,34 @@ __getattr__, __dir__ = lazy_exports(
         "PostPaymentIntentsIntentConfirmRequestMandateDataOption3CustomerAcceptance": ".schemas.post_payment_intents_intent_confirm_request_mandate_data_option3_customer_acceptance",
         "PostPaymentIntentsIntentConfirmRequestMandateDataOption3CustomerAcceptanceOnline": ".schemas.post_payment_intents_intent_confirm_request_mandate_data_option3_customer_acceptance_online",
         "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1Item": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_distance",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drivers_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drop_off",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_drop_off_address",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_pickup",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_pickup_address",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item_vehicle",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1Item": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_accommodation",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_guests_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHost": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_host",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_host_address",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotal": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item",
         "PostPaymentIntentsIntentConfirmRequestPaymentMethodData": ".schemas.post_payment_intents_intent_confirm_request_payment_method_data",
         "PostPaymentIntentsIntentConfirmRequestPaymentMethodDataAcssDebit": ".schemas.post_payment_intents_intent_confirm_request_payment_method_data_acss_debit",
         "PostPaymentIntentsIntentConfirmRequestPaymentMethodDataAuBecsDebit": ".schemas.post_payment_intents_intent_confirm_request_payment_method_data_au_becs_debit",
@@ -1825,6 +2329,34 @@ __getattr__, __dir__ = lazy_exports(
         "PostPaymentIntentsIntentRequestHooksInputs": ".schemas.post_payment_intents_intent_request_hooks_inputs",
         "PostPaymentIntentsIntentRequestHooksInputsTax": ".schemas.post_payment_intents_intent_request_hooks_inputs_tax",
         "PostPaymentIntentsIntentRequestPaymentDetailsOption1": ".schemas.post_payment_intents_intent_request_payment_details_option1",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1Item": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDistance": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_distance",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drivers_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDriversItemDateOfBirth": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drivers_item_date_of_birth",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOff": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drop_off",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemDropOffAddress": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_drop_off_address",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickup": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_pickup",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemPickupAddress": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_pickup_address",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotal": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_total_tax_tax_items_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1CarRentalDataOption1ItemVehicle": ".schemas.post_payment_intents_intent_request_payment_details_option1_car_rental_data_option1_item_vehicle",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1Item": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAccommodation": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_accommodation",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemAffiliate": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_affiliate",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemGuestsItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_guests_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHost": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_host",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemHostAddress": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_host_address",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_insurances_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotal": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_discounts",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTax": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_tax",
+        "PostPaymentIntentsIntentRequestPaymentDetailsOption1LodgingDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_intent_request_payment_details_option1_lodging_data_option1_item_total_tax_tax_items_item",
         "PostPaymentIntentsIntentRequestPaymentMethodData": ".schemas.post_payment_intents_intent_request_payment_method_data",
         "PostPaymentIntentsIntentRequestPaymentMethodDataAcssDebit": ".schemas.post_payment_intents_intent_request_payment_method_data_acss_debit",
         "PostPaymentIntentsIntentRequestPaymentMethodDataAuBecsDebit": ".schemas.post_payment_intents_intent_request_payment_method_data_au_becs_debit",
@@ -1951,6 +2483,34 @@ __getattr__, __dir__ = lazy_exports(
         "PostPaymentIntentsRequestMandateDataOption1CustomerAcceptance": ".schemas.post_payment_intents_request_mandate_data_option1_customer_acceptance",
         "PostPaymentIntentsRequestMandateDataOption1CustomerAcceptanceOnline": ".schemas.post_payment_intents_request_mandate_data_option1_customer_acceptance_online",
         "PostPaymentIntentsRequestPaymentDetails": ".schemas.post_payment_intents_request_payment_details",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1Item": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemAffiliate": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_affiliate",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDistance": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_distance",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItem": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drivers_item",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDriversItemDateOfBirth": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drivers_item_date_of_birth",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOff": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drop_off",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemDropOffAddress": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_drop_off_address",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_insurances_item",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickup": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_pickup",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemPickupAddress": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_pickup_address",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotal": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_discounts",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTax": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_tax",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_total_tax_tax_items_item",
+        "PostPaymentIntentsRequestPaymentDetailsCarRentalDataOption1ItemVehicle": ".schemas.post_payment_intents_request_payment_details_car_rental_data_option1_item_vehicle",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1Item": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAccommodation": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_accommodation",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemAffiliate": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_affiliate",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemGuestsItem": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_guests_item",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHost": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_host",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemHostAddress": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_host_address",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemInsurancesItem": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_insurances_item",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotal": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalDiscounts": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_discounts",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalExtraChargesItem": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_extra_charges_item",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTax": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_tax",
+        "PostPaymentIntentsRequestPaymentDetailsLodgingDataOption1ItemTotalTaxTaxItemsItem": ".schemas.post_payment_intents_request_payment_details_lodging_data_option1_item_total_tax_tax_items_item",
         "PostPaymentIntentsRequestPaymentMethodData": ".schemas.post_payment_intents_request_payment_method_data",
         "PostPaymentIntentsRequestPaymentMethodDataAcssDebit": ".schemas.post_payment_intents_request_payment_method_data_acss_debit",
         "PostPaymentIntentsRequestPaymentMethodDataAuBecsDebit": ".schemas.post_payment_intents_request_payment_method_data_au_becs_debit",

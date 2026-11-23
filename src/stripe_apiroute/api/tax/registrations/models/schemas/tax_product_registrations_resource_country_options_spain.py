@@ -11,13 +11,17 @@ from pydantic import BaseModel, ConfigDict, Field
 from .tax_product_registrations_resource_country_options_eu_standard import (
     TaxProductRegistrationsResourceCountryOptionsEuStandard,
 )
+from .tax_product_registrations_resource_country_options_igic import (
+    TaxProductRegistrationsResourceCountryOptionsIgic,
+)
 
 __all__ = ["TaxProductRegistrationsResourceCountryOptionsSpain"]
 
 
 class TaxProductRegistrationsResourceCountryOptionsSpain(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
+    igic: TaxProductRegistrationsResourceCountryOptionsIgic | None = None
     standard: TaxProductRegistrationsResourceCountryOptionsEuStandard | None = None
 
     # Type of registration in ES.
-    type_: Literal["ioss", "oss_non_union", "oss_union", "standard"] = Field(alias="type")
+    type_: Literal["igic", "ioss", "oss_non_union", "oss_union", "standard"] = Field(alias="type")

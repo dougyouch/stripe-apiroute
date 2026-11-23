@@ -22,7 +22,7 @@ class PostFinancialConnectionsSessionsRequestFilters(BaseModel):
         list[Literal["checking", "credit_card", "line_of_credit", "mortgage", "savings"]] | None
     ) = None
 
-    # Country from which to collect accounts.
+    # Country from which to collect accounts. Supported values are `US` and `CA`.
     country: str | None = None
 
     # Whether the session should require payment method support and successful account number

@@ -6,6 +6,8 @@ from __future__ import annotations
 
 from pydantic import BaseModel, ConfigDict
 
+from .payment_method_details_link_funding_source import PaymentMethodDetailsLinkFundingSource
+
 __all__ = ["PaymentMethodDetailsCardWalletLink"]
 
 
@@ -15,3 +17,6 @@ class PaymentMethodDetailsCardWalletLink(BaseModel):
     # The [funding source group code](https://docs.stripe.com/payments/link/link-payment-
     # methods) applied to this Link payment at confirmation time.
     funding_source_group: str | None
+
+    # Details about the funding sources used for this Link payment.
+    funding_sources: list[PaymentMethodDetailsLinkFundingSource] | None = None

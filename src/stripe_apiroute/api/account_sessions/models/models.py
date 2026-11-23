@@ -46,6 +46,12 @@ if TYPE_CHECKING:
     from .schemas.connect_embedded_issuing_cards_list_features import (
         ConnectEmbeddedIssuingCardsListFeatures,
     )
+    from .schemas.connect_embedded_notification_banner_config import (
+        ConnectEmbeddedNotificationBannerConfig,
+    )
+    from .schemas.connect_embedded_notification_banner_features import (
+        ConnectEmbeddedNotificationBannerFeatures,
+    )
     from .schemas.connect_embedded_payment_disputes_config import (
         ConnectEmbeddedPaymentDisputesConfig,
     )
@@ -207,6 +213,8 @@ __all__ = [
     "ConnectEmbeddedIssuingCardFeatures",
     "ConnectEmbeddedIssuingCardsListConfigClaim",
     "ConnectEmbeddedIssuingCardsListFeatures",
+    "ConnectEmbeddedNotificationBannerConfig",
+    "ConnectEmbeddedNotificationBannerFeatures",
     "ConnectEmbeddedPaymentDisputesConfig",
     "ConnectEmbeddedPaymentDisputesFeatures",
     "ConnectEmbeddedPaymentMethodSettingsConfigClaim",
@@ -281,6 +289,8 @@ __getattr__, __dir__ = lazy_exports(
         "ConnectEmbeddedIssuingCardFeatures": ".schemas.connect_embedded_issuing_card_features",
         "ConnectEmbeddedIssuingCardsListConfigClaim": ".schemas.connect_embedded_issuing_cards_list_config_claim",
         "ConnectEmbeddedIssuingCardsListFeatures": ".schemas.connect_embedded_issuing_cards_list_features",
+        "ConnectEmbeddedNotificationBannerConfig": ".schemas.connect_embedded_notification_banner_config",
+        "ConnectEmbeddedNotificationBannerFeatures": ".schemas.connect_embedded_notification_banner_features",
         "ConnectEmbeddedPaymentDisputesConfig": ".schemas.connect_embedded_payment_disputes_config",
         "ConnectEmbeddedPaymentDisputesFeatures": ".schemas.connect_embedded_payment_disputes_features",
         "ConnectEmbeddedPaymentMethodSettingsConfigClaim": ".schemas.connect_embedded_payment_method_settings_config_claim",

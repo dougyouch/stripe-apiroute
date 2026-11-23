@@ -8,16 +8,37 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict
 
+from .post_payment_intents_intent_confirm_request_payment_details_option1_car_rental_data_option1_item import (
+    PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1Item,
+)
+from .post_payment_intents_intent_confirm_request_payment_details_option1_lodging_data_option1_item import (
+    PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1Item,
+)
+
 __all__ = ["PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1"]
 
 
 class PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
+    # Car rental data for this PaymentIntent.
+    car_rental_data: (
+        list[PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1CarRentalDataOption1Item]
+        | Literal[""]
+        | None
+    ) = None
+
     # A unique value to identify the customer. This field is available only for card payments.
     # This field is truncated to 25 alphanumeric characters, excluding spaces, before being sent
     # to card networks.
     customer_reference: str | Literal[""] | None = None
+
+    # Lodging data for this PaymentIntent.
+    lodging_data: (
+        list[PostPaymentIntentsIntentConfirmRequestPaymentDetailsOption1LodgingDataOption1Item]
+        | Literal[""]
+        | None
+    ) = None
 
     # A unique value assigned by the business to identify the transaction. Required for L2 and
     # L3 rates. For Cards, this field is truncated to 25 alphanumeric characters, excluding

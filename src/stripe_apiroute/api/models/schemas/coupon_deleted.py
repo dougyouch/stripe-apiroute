@@ -16,7 +16,7 @@ class CouponDeleted(BaseModel):
 
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # A coupon contains information about a percent-off or amount-off discount you might want to
-    # apply to a customer. Coupons may be applied to
-    # [subscriptions](https://docs.stripe.com/api#subscriptions),
+    # A coupon defines a fixed or custom discount. Fixed discounts take a percentage or amount
+    # off, while [custom coupons](https://docs.stripe.com/billing/subscriptions/script-coupons)
+    # use scripts to calculate discounts dynamically for subscriptions and invoices. You can
     object: Coupon

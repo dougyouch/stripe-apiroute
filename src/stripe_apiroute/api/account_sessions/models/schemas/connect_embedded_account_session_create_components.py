@@ -23,6 +23,7 @@ from .connect_embedded_issuing_card_config_claim import ConnectEmbeddedIssuingCa
 from .connect_embedded_issuing_cards_list_config_claim import (
     ConnectEmbeddedIssuingCardsListConfigClaim,
 )
+from .connect_embedded_notification_banner_config import ConnectEmbeddedNotificationBannerConfig
 from .connect_embedded_payment_disputes_config import ConnectEmbeddedPaymentDisputesConfig
 from .connect_embedded_payment_method_settings_config_claim import (
     ConnectEmbeddedPaymentMethodSettingsConfigClaim,
@@ -46,7 +47,7 @@ class ConnectEmbeddedAccountSessionCreateComponents(BaseModel):
     instant_payouts_promotion: ConnectEmbeddedInstantPayoutsPromotionConfig
     issuing_card: ConnectEmbeddedIssuingCardConfigClaim
     issuing_cards_list: ConnectEmbeddedIssuingCardsListConfigClaim
-    notification_banner: ConnectEmbeddedAccountConfigClaim
+    notification_banner: ConnectEmbeddedNotificationBannerConfig
     payment_details: ConnectEmbeddedPaymentsConfigClaim
     payment_disputes: ConnectEmbeddedPaymentDisputesConfig
     payment_method_settings: ConnectEmbeddedPaymentMethodSettingsConfigClaim

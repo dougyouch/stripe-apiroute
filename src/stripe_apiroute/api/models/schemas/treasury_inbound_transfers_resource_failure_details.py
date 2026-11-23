@@ -8,6 +8,10 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict
 
+from .treasury_inbound_transfers_resource_failure_details_resource_network_details import (
+    TreasuryInboundTransfersResourceFailureDetailsResourceNetworkDetails,
+)
+
 __all__ = ["TreasuryInboundTransfersResourceFailureDetails"]
 
 
@@ -30,3 +34,6 @@ class TreasuryInboundTransfersResourceFailureDetails(BaseModel):
         "no_account",
         "other",
     ]
+
+    # Money movement network-specific details regarding the failure.
+    network_details: TreasuryInboundTransfersResourceFailureDetailsResourceNetworkDetails | None

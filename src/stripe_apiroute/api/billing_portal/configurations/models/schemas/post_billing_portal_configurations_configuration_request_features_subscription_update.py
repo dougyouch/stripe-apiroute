@@ -47,7 +47,8 @@ class PostBillingPortalConfigurationsConfigurationRequestFeaturesSubscriptionUpd
     ) = None
 
     # Determines how to handle prorations resulting from subscription updates. Valid values are
-    # `none`, `create_prorations`, and `always_invoice`.
+    # `none`, `create_prorations`, and `always_invoice`. If omitted, the proration behavior is
+    # unchanged.
     proration_behavior: Literal["always_invoice", "create_prorations", "none"] | None = None
 
     # Setting to control when an update should be scheduled at the end of the period instead of

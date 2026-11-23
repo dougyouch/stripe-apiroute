@@ -34,7 +34,7 @@ class TestHelpersTreasuryOutboundTransfersSection(Section):
         *,
         body: dict[str, Any],
     ) -> dict[str, Any]:
-        """Test mode: Update an OutboundTransfer"""
+        """Test helper: Update an OutboundTransfer"""
         ...
 
     @route(
@@ -49,7 +49,7 @@ class TestHelpersTreasuryOutboundTransfersSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Fail an OutboundTransfer"""
+        """Test helper: Fail an OutboundTransfer"""
         ...
 
     @route(
@@ -64,7 +64,7 @@ class TestHelpersTreasuryOutboundTransfersSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Post an OutboundTransfer"""
+        """Test helper: Post an OutboundTransfer"""
         ...
 
     @route(
@@ -79,5 +79,5 @@ class TestHelpersTreasuryOutboundTransfersSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Return an OutboundTransfer"""
+        """Test helper: Return an OutboundTransfer"""
         ...

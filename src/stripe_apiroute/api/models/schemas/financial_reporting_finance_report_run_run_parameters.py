@@ -37,6 +37,9 @@ class FinancialReportingFinanceReportRunRunParameters(BaseModel):
     # Category of balance transactions to be included in the report run.
     reporting_category: str | None = None
 
+    # The tax invoice month in YYYY-MM format.
+    tax_invoice_month: str | None = None
+
     # Defaults to `Etc/UTC`. The output timezone for all timestamps in the report. A list of
     # possible time zone values is maintained at the [IANA Time Zone
     # Database](http://www.iana.org/time-zones). Has no effect on `interval_start` or

@@ -844,6 +844,7 @@ class ApiErrors(BaseModel):
             "forwarding_api_upstream_connection_timeout",
             "forwarding_api_upstream_error",
             "idempotency_key_in_use",
+            "inactive_api_operation_confirmation_required",
             "incorrect_address",
             "incorrect_cvc",
             "incorrect_number",
@@ -1180,9 +1181,9 @@ class BalanceTransaction(BaseModel):
     # An arbitrary string attached to the object. Often useful for displaying to users.
     description: str | None
 
-    # If applicable, this transaction uses an exchange rate. If money converts from currency A
-    # to currency B, then the `amount` in currency A, multiplied by the `exchange_rate`, equals
-    # the `amount` in currency B. For example, if you charge a customer 10.00 EUR, the
+    # The exchange rate used for this transaction, if applicable. Multiplying the source
+    # `amount` by the `exchange_rate` gives the destination `amount`, both in their currencies'
+    # smallest units. For example, `1000` EUR cents converts to `1234` USD cents at `1.234`. For
     exchange_rate: float | None
 
     # Fees (in cents (or local equivalent)) paid for this transaction. Represented as a positive
@@ -2378,8 +2379,8 @@ class Dispute(BaseModel):
     # currency fluctuation or because only part of the order is disputed).
     amount: int
 
-    # List of zero, one, or two balance transactions that show funds withdrawn and reinstated to
-    # your Stripe account as a result of this dispute.
+    # List of balance transactions that show funds withdrawn and reinstated to your Stripe
+    # account as a result of this dispute.
     balance_transactions: list[BalanceTransaction]
 
     # ID of the charge that's disputed.
@@ -5016,6 +5017,11 @@ class Refund(BaseModel):
 
     # Amount, in cents (or local equivalent).
     amount: int
+
+    # ID of the Connect application that created the refund. This can differ from the
+    # application on the associated Charge or PaymentIntent. A null value does not necessarily
+    # mean the refund was created without a Connect application.
+    application: str | Application | None
 
     # Balance transaction that describes the impact on your account balance.
     balance_transaction: str | BalanceTransaction | None

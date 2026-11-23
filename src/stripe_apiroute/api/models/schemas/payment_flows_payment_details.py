@@ -6,16 +6,25 @@ from __future__ import annotations
 
 from pydantic import BaseModel, ConfigDict
 
+from .payment_flows_industry_metadata_car_rental_data_resource_car_rental import (
+    PaymentFlowsIndustryMetadataCarRentalDataResourceCarRental,
+)
+from .payment_flows_industry_metadata_lodging_data_resource_lodging import (
+    PaymentFlowsIndustryMetadataLodgingDataResourceLodging,
+)
+
 __all__ = ["PaymentFlowsPaymentDetails"]
 
 
 class PaymentFlowsPaymentDetails(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
+    car_rental_data: list[PaymentFlowsIndustryMetadataCarRentalDataResourceCarRental] | None = None
 
     # A unique value to identify the customer. This field is available only for card payments.
     # This field is truncated to 25 alphanumeric characters, excluding spaces, before being sent
     # to card networks.
     customer_reference: str | None
+    lodging_data: list[PaymentFlowsIndustryMetadataLodgingDataResourceLodging] | None = None
 
     # A unique value assigned by the business to identify the transaction. Required for L2 and
     # L3 rates. For Cards, this field is truncated to 25 alphanumeric characters, excluding

@@ -4,6 +4,8 @@
 
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, ConfigDict
 
 from .post_checkout_sessions_request_automatic_tax_liability import (
@@ -19,6 +21,11 @@ class PostCheckoutSessionsRequestAutomaticTax(BaseModel):
     """
 
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
+
+    # Controls how much address information Checkout collects when [automatic_tax](https://strip
+    # e.com/docs/api/checkout/sessions/object#checkout_session_object-automatic_tax-enabled) is
+    # enabled. Defaults to `full`, which collects the address fields needed for the most
+    address_collection_precision: Literal["full", "minimal"] | None = None
 
     # Set to `true` to [calculate tax automatically](https://docs.stripe.com/tax) using the
     # customer's location. Enabling this parameter causes Checkout to collect any billing

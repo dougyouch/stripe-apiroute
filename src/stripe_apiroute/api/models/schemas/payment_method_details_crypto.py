@@ -18,7 +18,7 @@ class PaymentMethodDetailsCrypto(BaseModel):
     buyer_address: str | None = None
 
     # The blockchain network that the transaction was sent on.
-    network: Literal["base", "ethereum", "polygon", "solana", "sui", "tempo"] | None = None
+    network: Literal["base", "ethereum", "polygon", "solana", "sui", "tempo", "tron"] | None = None
 
     # The token currency that the transaction was sent with.
     token_currency: (

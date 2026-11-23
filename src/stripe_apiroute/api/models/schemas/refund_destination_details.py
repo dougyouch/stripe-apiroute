@@ -8,6 +8,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from .destination_details_unimplemented import DestinationDetailsUnimplemented
 from .refund_destination_details_afterpay_clearpay import RefundDestinationDetailsAfterpayClearpay
+from .refund_destination_details_bizum import RefundDestinationDetailsBizum
 from .refund_destination_details_blik import RefundDestinationDetailsBlik
 from .refund_destination_details_br_bank_transfer import RefundDestinationDetailsBrBankTransfer
 from .refund_destination_details_card import RefundDestinationDetailsCard
@@ -23,6 +24,7 @@ from .refund_destination_details_p24 import RefundDestinationDetailsP24
 from .refund_destination_details_paypal import RefundDestinationDetailsPaypal
 from .refund_destination_details_swish import RefundDestinationDetailsSwish
 from .refund_destination_details_th_bank_transfer import RefundDestinationDetailsThBankTransfer
+from .refund_destination_details_upi import RefundDestinationDetailsUpi
 from .refund_destination_details_us_bank_transfer import RefundDestinationDetailsUsBankTransfer
 
 __all__ = ["RefundDestinationDetails"]
@@ -36,6 +38,7 @@ class RefundDestinationDetails(BaseModel):
     alma: DestinationDetailsUnimplemented | None = None
     amazon_pay: DestinationDetailsUnimplemented | None = None
     au_bank_transfer: DestinationDetailsUnimplemented | None = None
+    bizum: RefundDestinationDetailsBizum | None = None
     blik: RefundDestinationDetailsBlik | None = None
     br_bank_transfer: RefundDestinationDetailsBrBankTransfer | None = None
     card: RefundDestinationDetailsCard | None = None
@@ -68,6 +71,7 @@ class RefundDestinationDetails(BaseModel):
     # `card`). An additional hash is included on `destination_details` with a name matching this
     # value. It contains information specific to the refund transaction.
     type_: str = Field(alias="type")
+    upi: RefundDestinationDetailsUpi | None = None
     us_bank_transfer: RefundDestinationDetailsUsBankTransfer | None = None
     wechat_pay: DestinationDetailsUnimplemented | None = None
     zip: DestinationDetailsUnimplemented | None = None

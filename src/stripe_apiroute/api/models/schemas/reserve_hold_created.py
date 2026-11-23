@@ -16,5 +16,7 @@ class ReserveHoldCreated(BaseModel):
 
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # ReserveHolds are used to place a temporary ReserveHold on a merchant's funds.
+    # A ReserveHold holds a portion of an account's funds until it's released. Stripe or the
+    # account's platform can create a ReserveHold directly, and a ReservePlan creates
+    # ReserveHolds automatically from incoming Charges.
     object: ReserveHold

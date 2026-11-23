@@ -18,7 +18,7 @@ class PaymentsPrimitivesPaymentRecordsResourcePaymentMethodCardDetailsResourceCh
     # `unavailable`, or `unchecked`.
     address_line1_check: Literal["fail", "pass", "unavailable", "unchecked"] | None
 
-    # If you provide a address postal code, the check result is one of `pass`, `fail`,
+    # If you provide an address postal code, the check result is one of `pass`, `fail`,
     # `unavailable`, or `unchecked`.
     address_postal_code_check: Literal["fail", "pass", "unavailable", "unchecked"] | None
 

@@ -13,7 +13,7 @@ class PaymentMethodDetailsNzBankAccount(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
     # The name on the bank account. Only present if the account holder name is different from
-    # the name of the authorized signatory collected in the PaymentMethod’s billing details.
+    # the name of the authorized signatory collected in the PaymentMethod's billing details.
     account_holder_name: str | None
 
     # The numeric code for the bank account's bank.

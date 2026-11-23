@@ -187,6 +187,9 @@ if TYPE_CHECKING:
     from .schemas.post_tax_registrations_request_country_options_es import (
         PostTaxRegistrationsRequestCountryOptionsEs,
     )
+    from .schemas.post_tax_registrations_request_country_options_es_igic import (
+        PostTaxRegistrationsRequestCountryOptionsEsIgic,
+    )
     from .schemas.post_tax_registrations_request_country_options_es_standard import (
         PostTaxRegistrationsRequestCountryOptionsEsStandard,
     )
@@ -571,6 +574,9 @@ if TYPE_CHECKING:
     from .schemas.tax_product_registrations_resource_country_options_europe import (
         TaxProductRegistrationsResourceCountryOptionsEurope,
     )
+    from .schemas.tax_product_registrations_resource_country_options_igic import (
+        TaxProductRegistrationsResourceCountryOptionsIgic,
+    )
     from .schemas.tax_product_registrations_resource_country_options_simplified import (
         TaxProductRegistrationsResourceCountryOptionsSimplified,
     )
@@ -693,6 +699,7 @@ __all__ = [
     "PostTaxRegistrationsRequestCountryOptionsEeStandard",
     "PostTaxRegistrationsRequestCountryOptionsEg",
     "PostTaxRegistrationsRequestCountryOptionsEs",
+    "PostTaxRegistrationsRequestCountryOptionsEsIgic",
     "PostTaxRegistrationsRequestCountryOptionsEsStandard",
     "PostTaxRegistrationsRequestCountryOptionsEt",
     "PostTaxRegistrationsRequestCountryOptionsEtStandard",
@@ -821,6 +828,7 @@ __all__ = [
     "TaxProductRegistrationsResourceCountryOptionsDefaultStandard",
     "TaxProductRegistrationsResourceCountryOptionsEuStandard",
     "TaxProductRegistrationsResourceCountryOptionsEurope",
+    "TaxProductRegistrationsResourceCountryOptionsIgic",
     "TaxProductRegistrationsResourceCountryOptionsSimplified",
     "TaxProductRegistrationsResourceCountryOptionsSpain",
     "TaxProductRegistrationsResourceCountryOptionsThailand",
@@ -908,6 +916,7 @@ __getattr__, __dir__ = lazy_exports(
         "PostTaxRegistrationsRequestCountryOptionsEeStandard": ".schemas.post_tax_registrations_request_country_options_ee_standard",
         "PostTaxRegistrationsRequestCountryOptionsEg": ".schemas.post_tax_registrations_request_country_options_eg",
         "PostTaxRegistrationsRequestCountryOptionsEs": ".schemas.post_tax_registrations_request_country_options_es",
+        "PostTaxRegistrationsRequestCountryOptionsEsIgic": ".schemas.post_tax_registrations_request_country_options_es_igic",
         "PostTaxRegistrationsRequestCountryOptionsEsStandard": ".schemas.post_tax_registrations_request_country_options_es_standard",
         "PostTaxRegistrationsRequestCountryOptionsEt": ".schemas.post_tax_registrations_request_country_options_et",
         "PostTaxRegistrationsRequestCountryOptionsEtStandard": ".schemas.post_tax_registrations_request_country_options_et_standard",
@@ -1036,6 +1045,7 @@ __getattr__, __dir__ = lazy_exports(
         "TaxProductRegistrationsResourceCountryOptionsDefaultStandard": ".schemas.tax_product_registrations_resource_country_options_default_standard",
         "TaxProductRegistrationsResourceCountryOptionsEuStandard": ".schemas.tax_product_registrations_resource_country_options_eu_standard",
         "TaxProductRegistrationsResourceCountryOptionsEurope": ".schemas.tax_product_registrations_resource_country_options_europe",
+        "TaxProductRegistrationsResourceCountryOptionsIgic": ".schemas.tax_product_registrations_resource_country_options_igic",
         "TaxProductRegistrationsResourceCountryOptionsSimplified": ".schemas.tax_product_registrations_resource_country_options_simplified",
         "TaxProductRegistrationsResourceCountryOptionsSpain": ".schemas.tax_product_registrations_resource_country_options_spain",
         "TaxProductRegistrationsResourceCountryOptionsThailand": ".schemas.tax_product_registrations_resource_country_options_thailand",

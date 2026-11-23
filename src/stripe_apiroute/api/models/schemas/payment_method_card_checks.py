@@ -12,11 +12,11 @@ __all__ = ["PaymentMethodCardChecks"]
 class PaymentMethodCardChecks(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # If a address line1 was provided, results of the check, one of `pass`, `fail`,
+    # If an address line1 was provided, results of the check, one of `pass`, `fail`,
     # `unavailable`, or `unchecked`.
     address_line1_check: str | None
 
-    # If a address postal code was provided, results of the check, one of `pass`, `fail`,
+    # If an address postal code was provided, results of the check, one of `pass`, `fail`,
     # `unavailable`, or `unchecked`.
     address_postal_code_check: str | None
 

@@ -26,7 +26,7 @@ class TestHelpersTreasuryOutboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundTransfersOutboundTransferRequest,
     ) -> TreasuryOutboundTransfer:
-        """Test mode: Update an OutboundTransfer"""
+        """Test helper: Update an OutboundTransfer"""
         return self._call(
             "update", "TreasuryOutboundTransfer", outbound_transfer=outbound_transfer, body=body
         )
@@ -37,7 +37,7 @@ class TestHelpersTreasuryOutboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundTransfersOutboundTransferFailRequest | None = None,
     ) -> TreasuryOutboundTransfer:
-        """Test mode: Fail an OutboundTransfer"""
+        """Test helper: Fail an OutboundTransfer"""
         return self._call(
             "fail", "TreasuryOutboundTransfer", outbound_transfer=outbound_transfer, body=body
         )
@@ -48,7 +48,7 @@ class TestHelpersTreasuryOutboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundTransfersOutboundTransferPostRequest | None = None,
     ) -> TreasuryOutboundTransfer:
-        """Test mode: Post an OutboundTransfer"""
+        """Test helper: Post an OutboundTransfer"""
         return self._call(
             "post", "TreasuryOutboundTransfer", outbound_transfer=outbound_transfer, body=body
         )
@@ -59,7 +59,7 @@ class TestHelpersTreasuryOutboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundTransfersOutboundTransferReturnRequest | None = None,
     ) -> TreasuryOutboundTransfer:
-        """Test mode: Return an OutboundTransfer"""
+        """Test helper: Return an OutboundTransfer"""
         return self._call(
             "return_outbound_transfer",
             "TreasuryOutboundTransfer",

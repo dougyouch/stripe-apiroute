@@ -70,7 +70,8 @@ class Event(BaseModel):
     object: Literal["event"]
 
     # Number of webhooks that haven't been successfully delivered (for example, to return a 20x
-    # response) to the URLs you specify.
+    # response). This count can include deliveries to endpoints that belong to Connect platforms
+    # or apps with access to your account. These endpoints don't appear when you list your
     pending_webhooks: int
 
     # Information on the API request that triggers the event.

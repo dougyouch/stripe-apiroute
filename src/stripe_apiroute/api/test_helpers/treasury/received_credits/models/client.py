@@ -19,5 +19,5 @@ class TestHelpersTreasuryReceivedCreditsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryReceivedCreditsRequest,
     ) -> TreasuryReceivedCredit:
-        """Test mode: Create a ReceivedCredit"""
+        """Test helper: Create a ReceivedCredit"""
         return self._call("create", "TreasuryReceivedCredit", body=body)

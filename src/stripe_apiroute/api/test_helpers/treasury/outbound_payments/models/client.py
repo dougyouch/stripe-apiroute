@@ -26,7 +26,7 @@ class TestHelpersTreasuryOutboundPaymentsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundPaymentsIdRequest,
     ) -> TreasuryOutboundPayment:
-        """Test mode: Update an OutboundPayment"""
+        """Test helper: Update an OutboundPayment"""
         return self._call("update", "TreasuryOutboundPayment", id=id, body=body)
 
     def fail(
@@ -35,7 +35,7 @@ class TestHelpersTreasuryOutboundPaymentsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundPaymentsIdFailRequest | None = None,
     ) -> TreasuryOutboundPayment:
-        """Test mode: Fail an OutboundPayment"""
+        """Test helper: Fail an OutboundPayment"""
         return self._call("fail", "TreasuryOutboundPayment", id=id, body=body)
 
     def post(
@@ -44,7 +44,7 @@ class TestHelpersTreasuryOutboundPaymentsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundPaymentsIdPostRequest | None = None,
     ) -> TreasuryOutboundPayment:
-        """Test mode: Post an OutboundPayment"""
+        """Test helper: Post an OutboundPayment"""
         return self._call("post", "TreasuryOutboundPayment", id=id, body=body)
 
     def return_outbound_payment(
@@ -53,5 +53,5 @@ class TestHelpersTreasuryOutboundPaymentsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryOutboundPaymentsIdReturnRequest | None = None,
     ) -> TreasuryOutboundPayment:
-        """Test mode: Return an OutboundPayment"""
+        """Test helper: Return an OutboundPayment"""
         return self._call("return_outbound_payment", "TreasuryOutboundPayment", id=id, body=body)

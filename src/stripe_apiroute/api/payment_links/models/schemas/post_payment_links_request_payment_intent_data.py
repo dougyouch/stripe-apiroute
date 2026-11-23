@@ -19,7 +19,7 @@ class PostPaymentLinksRequestPaymentIntentData(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
     # Controls when the funds will be captured from the customer's account.
-    capture_method: Literal["automatic", "automatic_async", "manual"] | None = None
+    capture_method: Literal["", "automatic", "automatic_async", "manual"] | None = None
 
     # An arbitrary string attached to the object. Often useful for displaying to users.
     description: str | None = None

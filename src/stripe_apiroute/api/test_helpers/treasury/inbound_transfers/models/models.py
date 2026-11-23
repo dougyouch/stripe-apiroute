@@ -16,8 +16,23 @@ if TYPE_CHECKING:
     from .schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details import (
         PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetails,
     )
+    from .schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details_network_details import (
+        PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetails,
+    )
+    from .schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details_network_details_ach import (
+        PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetailsAch,
+    )
     from .schemas.post_test_helpers_treasury_inbound_transfers_id_return_request import (
         PostTestHelpersTreasuryInboundTransfersIdReturnRequest,
+    )
+    from .schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details import (
+        PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetails,
+    )
+    from .schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details_network_details import (
+        PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetails,
+    )
+    from .schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details_network_details_ach import (
+        PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetailsAch,
     )
     from .schemas.post_test_helpers_treasury_inbound_transfers_id_succeed_request import (
         PostTestHelpersTreasuryInboundTransfersIdSucceedRequest,
@@ -26,7 +41,12 @@ if TYPE_CHECKING:
 __all__ = [
     "PostTestHelpersTreasuryInboundTransfersIdFailRequest",
     "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetails",
+    "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetails",
+    "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetailsAch",
     "PostTestHelpersTreasuryInboundTransfersIdReturnRequest",
+    "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetails",
+    "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetails",
+    "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetailsAch",
     "PostTestHelpersTreasuryInboundTransfersIdSucceedRequest",
     "TreasuryInboundTransfer",
 ]
@@ -36,7 +56,12 @@ __getattr__, __dir__ = lazy_exports(
     {
         "PostTestHelpersTreasuryInboundTransfersIdFailRequest": ".schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request",
         "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetails": ".schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details",
+        "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetails": ".schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details_network_details",
+        "PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetailsAch": ".schemas.post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details_network_details_ach",
         "PostTestHelpersTreasuryInboundTransfersIdReturnRequest": ".schemas.post_test_helpers_treasury_inbound_transfers_id_return_request",
+        "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetails": ".schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details",
+        "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetails": ".schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details_network_details",
+        "PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetailsNetworkDetailsAch": ".schemas.post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details_network_details_ach",
         "PostTestHelpersTreasuryInboundTransfersIdSucceedRequest": ".schemas.post_test_helpers_treasury_inbound_transfers_id_succeed_request",
         "TreasuryInboundTransfer": ".....models.schemas.treasury_credit_reversal",
     },

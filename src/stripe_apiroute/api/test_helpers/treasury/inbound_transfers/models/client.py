@@ -25,7 +25,7 @@ class TestHelpersTreasuryInboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryInboundTransfersIdFailRequest | None = None,
     ) -> TreasuryInboundTransfer:
-        """Test mode: Fail an InboundTransfer"""
+        """Test helper: Fail an InboundTransfer"""
         return self._call("fail", "TreasuryInboundTransfer", id=id, body=body)
 
     def return_inbound_transfer(
@@ -34,7 +34,7 @@ class TestHelpersTreasuryInboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryInboundTransfersIdReturnRequest | None = None,
     ) -> TreasuryInboundTransfer:
-        """Test mode: Return an InboundTransfer"""
+        """Test helper: Return an InboundTransfer"""
         return self._call("return_inbound_transfer", "TreasuryInboundTransfer", id=id, body=body)
 
     def succeed(
@@ -43,5 +43,5 @@ class TestHelpersTreasuryInboundTransfersModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryInboundTransfersIdSucceedRequest | None = None,
     ) -> TreasuryInboundTransfer:
-        """Test mode: Succeed an InboundTransfer"""
+        """Test helper: Succeed an InboundTransfer"""
         return self._call("succeed", "TreasuryInboundTransfer", id=id, body=body)

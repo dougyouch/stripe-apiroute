@@ -14,7 +14,7 @@ __all__ = ["PaymentIntentNextActionVerifyWithMicrodeposits"]
 class PaymentIntentNextActionVerifyWithMicrodeposits(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # The timestamp when the microdeposits are expected to land.
+    # The timestamp when the microdeposits are expected to land. Null for instant microdeposits.
     arrival_date: int
 
     # The URL for the hosted verification page, which allows customers to verify their bank

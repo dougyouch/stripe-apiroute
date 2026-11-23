@@ -13,7 +13,6 @@ from .invoice_payment_method_options_customer_balance import (
 )
 from .invoice_payment_method_options_konbini import InvoicePaymentMethodOptionsKonbini
 from .invoice_payment_method_options_payto import InvoicePaymentMethodOptionsPayto
-from .invoice_payment_method_options_upi import InvoicePaymentMethodOptionsUpi
 from .invoice_payment_method_options_us_bank_account import InvoicePaymentMethodOptionsUsBankAccount
 from .subscription_payment_method_options_billie import SubscriptionPaymentMethodOptionsBillie
 from .subscription_payment_method_options_blik import SubscriptionPaymentMethodOptionsBlik
@@ -22,6 +21,7 @@ from .subscription_payment_method_options_pix import SubscriptionPaymentMethodOp
 from .subscription_payment_method_options_sepa_debit import (
     SubscriptionPaymentMethodOptionsSepaDebit,
 )
+from .subscription_payment_method_options_upi import SubscriptionPaymentMethodOptionsUpi
 
 __all__ = ["SubscriptionsResourcePaymentMethodOptions"]
 
@@ -71,7 +71,7 @@ class SubscriptionsResourcePaymentMethodOptions(BaseModel):
 
     # This sub-hash contains details about the UPI payment method options to pass to invoices
     # created by the subscription.
-    upi: InvoicePaymentMethodOptionsUpi | None
+    upi: SubscriptionPaymentMethodOptionsUpi | None
 
     # This sub-hash contains details about the ACH direct debit payment method options to pass
     # to invoices created by the subscription.

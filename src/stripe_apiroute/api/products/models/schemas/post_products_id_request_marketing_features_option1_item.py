@@ -4,6 +4,8 @@
 
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, ConfigDict
 
 __all__ = ["PostProductsIdRequestMarketingFeaturesOption1Item"]
@@ -11,6 +13,11 @@ __all__ = ["PostProductsIdRequestMarketingFeaturesOption1Item"]
 
 class PostProductsIdRequestMarketingFeaturesOption1Item(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
+
+    # Optional text that describes what a customer loses by canceling, shown for this marketing
+    # feature in the Customer Portal cancellation flow. Up to 80 characters long. If you omit it
+    # when you update `marketing_features`, Stripe keeps the message stored for the feature with
+    loss_message: str | Literal[""] | None = None
 
     # The marketing feature name. Up to 80 characters long.
     name: str

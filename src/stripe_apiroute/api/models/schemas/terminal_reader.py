@@ -45,13 +45,18 @@ class TerminalReader(BaseModel):
         "simulated_wisepos_e",
         "stripe_m2",
         "stripe_s700",
+        "stripe_s700_devkit",
         "stripe_s710",
+        "stripe_s710_devkit",
         "stripe_t600",
+        "stripe_t600_devkit",
         "verifone_P400",
         "verifone_m425",
         "verifone_p630",
         "verifone_ux700",
+        "verifone_ux700_devkit",
         "verifone_v660p",
+        "verifone_v660p_devkit",
     ]
 
     # Unique identifier for the object.

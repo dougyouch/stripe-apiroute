@@ -19,5 +19,5 @@ class TestHelpersTreasuryReceivedDebitsModels(TypedClient):
         *,
         body: PostTestHelpersTreasuryReceivedDebitsRequest,
     ) -> TreasuryReceivedDebit:
-        """Test mode: Create a ReceivedDebit"""
+        """Test helper: Create a ReceivedDebit"""
         return self._call("create", "TreasuryReceivedDebit", body=body)

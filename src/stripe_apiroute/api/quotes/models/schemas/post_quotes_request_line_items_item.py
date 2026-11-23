@@ -19,7 +19,8 @@ __all__ = ["PostQuotesRequestLineItemsItem"]
 class PostQuotesRequestLineItemsItem(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # The discounts applied to this line item.
+    # The discounts applied to this line item. Repeating coupons are only supported for
+    # recurring prices.
     discounts: list[PostQuotesRequestLineItemsItemDiscountsOption1Item] | Literal[""] | None = None
 
     # The ID of the price object. One of `price` or `price_data` is required.

@@ -8,6 +8,9 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
+from .post_tax_registrations_request_country_options_es_igic import (
+    PostTaxRegistrationsRequestCountryOptionsEsIgic,
+)
 from .post_tax_registrations_request_country_options_es_standard import (
     PostTaxRegistrationsRequestCountryOptionsEsStandard,
 )
@@ -20,8 +23,11 @@ class PostTaxRegistrationsRequestCountryOptionsEs(BaseModel):
 
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
+    # Options for the IGIC registration.
+    igic: PostTaxRegistrationsRequestCountryOptionsEsIgic | None = None
+
     # Options for the standard registration.
     standard: PostTaxRegistrationsRequestCountryOptionsEsStandard | None = None
 
     # Type of registration to be created in ES.
-    type_: Literal["ioss", "oss_non_union", "oss_union", "standard"] = Field(alias="type")
+    type_: Literal["igic", "ioss", "oss_non_union", "oss_union", "standard"] = Field(alias="type")

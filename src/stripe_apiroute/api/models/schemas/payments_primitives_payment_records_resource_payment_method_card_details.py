@@ -140,7 +140,7 @@ class PaymentsPrimitivesPaymentRecordsResourcePaymentMethodCardDetails(BaseModel
 
     # The transaction type that was passed for an off-session, Merchant-Initiated transaction,
     # one of `recurring` or `unscheduled`.
-    stored_credential_usage: Literal["installment", "recurring", "unscheduled"] | None = None
+    stored_credential_usage: Literal["installment", "recurring", "unscheduled"] | None
 
     # Populated if this transaction used 3D Secure authentication.
     three_d_secure: (

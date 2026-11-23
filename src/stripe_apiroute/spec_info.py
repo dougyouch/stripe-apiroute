@@ -2,7 +2,7 @@
 """What the client takes from Stripe's spec."""
 
 # The Stripe API version the spec, and so the typed models, describe
-STRIPE_VERSION = "2026-10-28.endive"
+STRIPE_VERSION = "2026-11-18.endive"
 
 # Operations served from a host of their own (file uploads, PDFs), by operation ID
 OPERATION_SERVERS = {

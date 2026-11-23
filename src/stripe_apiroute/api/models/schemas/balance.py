@@ -9,6 +9,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict
 
 from .balance_amount import BalanceAmount
+from .balance_amount_available import BalanceAmountAvailable
 from .balance_amount_net import BalanceAmountNet
 from .balance_detail import BalanceDetail
 from .balance_detail_ungated import BalanceDetailUngated
@@ -32,7 +33,7 @@ class Balance(BaseModel):
     # Available funds that you can transfer or pay out automatically by Stripe or explicitly
     # through the [Transfers API](https://docs.stripe.com/api#transfers) or [Payouts
     # API](https://docs.stripe.com/api#payouts). You can find the available balance for each
-    available: list[BalanceAmount]
+    available: list[BalanceAmountAvailable]
 
     # Funds held due to negative balances on connected accounts where
     # [account.controller.requirement_collection](/api/accounts/object#account_object-

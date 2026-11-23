@@ -6,6 +6,10 @@ from __future__ import annotations
 
 from pydantic import BaseModel, ConfigDict
 
+from .post_test_helpers_treasury_inbound_transfers_id_return_request_failure_details import (
+    PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetails,
+)
+
 __all__ = ["PostTestHelpersTreasuryInboundTransfersIdReturnRequest"]
 
 
@@ -14,3 +18,8 @@ class PostTestHelpersTreasuryInboundTransfersIdReturnRequest(BaseModel):
 
     # Specifies which fields in the response should be expanded.
     expand: list[str] | None = None
+
+    # Details about a returned InboundTransfer.
+    failure_details: PostTestHelpersTreasuryInboundTransfersIdReturnRequestFailureDetails | None = (
+        None
+    )

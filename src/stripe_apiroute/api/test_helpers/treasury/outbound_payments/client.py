@@ -34,7 +34,7 @@ class TestHelpersTreasuryOutboundPaymentsSection(Section):
         *,
         body: dict[str, Any],
     ) -> dict[str, Any]:
-        """Test mode: Update an OutboundPayment"""
+        """Test helper: Update an OutboundPayment"""
         ...
 
     @route(
@@ -49,7 +49,7 @@ class TestHelpersTreasuryOutboundPaymentsSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Fail an OutboundPayment"""
+        """Test helper: Fail an OutboundPayment"""
         ...
 
     @route(
@@ -64,7 +64,7 @@ class TestHelpersTreasuryOutboundPaymentsSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Post an OutboundPayment"""
+        """Test helper: Post an OutboundPayment"""
         ...
 
     @route(
@@ -79,5 +79,5 @@ class TestHelpersTreasuryOutboundPaymentsSection(Section):
         *,
         body: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """Test mode: Return an OutboundPayment"""
+        """Test helper: Return an OutboundPayment"""
         ...

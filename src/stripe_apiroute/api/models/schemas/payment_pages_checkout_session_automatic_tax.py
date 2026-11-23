@@ -16,6 +16,9 @@ __all__ = ["PaymentPagesCheckoutSessionAutomaticTax"]
 class PaymentPagesCheckoutSessionAutomaticTax(BaseModel):
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
+    # Controls how much address information Checkout collects when automatic tax is enabled.
+    address_collection_precision: Literal["full", "minimal"] | None = None
+
     # Indicates whether automatic tax is enabled for the session
     enabled: bool
 

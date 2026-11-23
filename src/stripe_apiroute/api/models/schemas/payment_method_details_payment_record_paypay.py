@@ -4,9 +4,14 @@
 
 from __future__ import annotations
 
-from typing import Any
+from pydantic import BaseModel, ConfigDict
 
 __all__ = ["PaymentMethodDetailsPaymentRecordPaypay"]
 
 
-PaymentMethodDetailsPaymentRecordPaypay = dict[str, Any]
+class PaymentMethodDetailsPaymentRecordPaypay(BaseModel):
+    model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
+
+    # Uniquely identifies this particular PayPay account. You can use this attribute to check
+    # whether two PayPay accounts are the same.
+    fingerprint: str | None = None

@@ -61,6 +61,9 @@ from .treasury_received_debits_resource_reversal_details import (
 from .treasury_received_debits_resource_status_transitions import (
     TreasuryReceivedDebitsResourceStatusTransitions,
 )
+from .treasury_shared_resource_failure_details_network_details import (
+    TreasurySharedResourceFailureDetailsNetworkDetails,
+)
 from .treasury_shared_resource_initiating_payment_method_details_initiating_payment_method_details import (
     TreasurySharedResourceInitiatingPaymentMethodDetailsInitiatingPaymentMethodDetails,
 )
@@ -415,6 +418,9 @@ class TreasuryOutboundPaymentsResourceReturnedStatus(BaseModel):
         "other",
     ]
 
+    # Money movement network-specific details regarding the failure.
+    network_details: TreasurySharedResourceFailureDetailsNetworkDetails | None
+
     # The Transaction associated with this object.
     transaction: str | TreasuryTransaction
 
@@ -528,6 +534,9 @@ class TreasuryOutboundTransfersResourceReturnedDetails(BaseModel):
         "no_account",
         "other",
     ]
+
+    # Money movement network-specific details regarding the failure.
+    network_details: TreasurySharedResourceFailureDetailsNetworkDetails | None
 
     # The Transaction associated with this object.
     transaction: str | TreasuryTransaction

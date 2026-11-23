@@ -33,5 +33,5 @@ class TestHelpersTreasuryReceivedDebitsSection(Section):
         *,
         body: dict[str, Any],
     ) -> dict[str, Any]:
-        """Test mode: Create a ReceivedDebit"""
+        """Test helper: Create a ReceivedDebit"""
         ...

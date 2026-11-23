@@ -14,5 +14,5 @@ class PostCouponsRequestAppliesTo(BaseModel):
 
     model_config = ConfigDict(defer_build=True, populate_by_name=True, protected_namespaces=())
 
-    # An array of Product IDs that this Coupon will apply to.
+    # An array of up to 100 Product IDs that this Coupon will apply to.
     products: list[str] | None = None

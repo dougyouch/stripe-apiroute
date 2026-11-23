@@ -8,8 +8,14 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from .account import Customer, PaymentMethodCard, PaymentMethodSepaDebit
+from .account import Customer, PaymentMethodSepaDebit
 from .billing_details import BillingDetails
+from .confirmation_token_payment_method_preview_card import (
+    ConfirmationTokenPaymentMethodPreviewCard,
+)
+from .confirmation_token_payment_method_preview_link import (
+    ConfirmationTokenPaymentMethodPreviewLink,
+)
 from .payment_flows_private_payment_methods_alipay import PaymentFlowsPrivatePaymentMethodsAlipay
 from .payment_method_acss_debit import PaymentMethodAcssDebit
 from .payment_method_affirm import PaymentMethodAffirm
@@ -37,7 +43,6 @@ from .payment_method_kakao_pay import PaymentMethodKakaoPay
 from .payment_method_klarna import PaymentMethodKlarna
 from .payment_method_konbini import PaymentMethodKonbini
 from .payment_method_kr_card import PaymentMethodKrCard
-from .payment_method_link import PaymentMethodLink
 from .payment_method_mb_way import PaymentMethodMbWay
 from .payment_method_mobilepay import PaymentMethodMobilepay
 from .payment_method_multibanco import PaymentMethodMultibanco
@@ -93,7 +98,7 @@ class ConfirmationTokensResourcePaymentMethodPreview(BaseModel):
     bizum: PaymentMethodBizum | None = None
     blik: PaymentMethodBlik | None = None
     boleto: PaymentMethodBoleto | None = None
-    card: PaymentMethodCard | None = None
+    card: ConfirmationTokenPaymentMethodPreviewCard | None = None
     card_present: PaymentMethodCardPresent | None = None
     cashapp: PaymentMethodCashapp | None = None
     crypto: PaymentMethodCrypto | None = None
@@ -113,7 +118,7 @@ class ConfirmationTokensResourcePaymentMethodPreview(BaseModel):
     klarna: PaymentMethodKlarna | None = None
     konbini: PaymentMethodKonbini | None = None
     kr_card: PaymentMethodKrCard | None = None
-    link: PaymentMethodLink | None = None
+    link: ConfirmationTokenPaymentMethodPreviewLink | None = None
     mb_way: PaymentMethodMbWay | None = None
     mobilepay: PaymentMethodMobilepay | None = None
     multibanco: PaymentMethodMultibanco | None = None

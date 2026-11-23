@@ -8,6 +8,10 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict
 
+from .post_test_helpers_treasury_inbound_transfers_id_fail_request_failure_details_network_details import (
+    PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetails,
+)
+
 __all__ = ["PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetails"]
 
 
@@ -34,4 +38,9 @@ class PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetails(BaseMod
             "other",
         ]
         | None
+    ) = None
+
+    # Network specific details for the failure.
+    network_details: (
+        PostTestHelpersTreasuryInboundTransfersIdFailRequestFailureDetailsNetworkDetails | None
     ) = None

@@ -183,6 +183,7 @@ if TYPE_CHECKING:
     from .schemas.apps_install_updated import AppsInstallUpdated
     from .schemas.balance import Balance
     from .schemas.balance_amount import BalanceAmount
+    from .schemas.balance_amount_available import BalanceAmountAvailable
     from .schemas.balance_amount_by_source_type import BalanceAmountBySourceType
     from .schemas.balance_amount_net import BalanceAmountNet
     from .schemas.balance_available import BalanceAvailable
@@ -481,6 +482,18 @@ if TYPE_CHECKING:
     from .schemas.climate_removals_products_price import ClimateRemovalsProductsPrice
     from .schemas.climate_supplier import ClimateSupplier
     from .schemas.confirmation_token import ConfirmationToken
+    from .schemas.confirmation_token_payment_method_preview_card import (
+        ConfirmationTokenPaymentMethodPreviewCard,
+    )
+    from .schemas.confirmation_token_payment_method_preview_card_wallet import (
+        ConfirmationTokenPaymentMethodPreviewCardWallet,
+    )
+    from .schemas.confirmation_token_payment_method_preview_card_wallet_link import (
+        ConfirmationTokenPaymentMethodPreviewCardWalletLink,
+    )
+    from .schemas.confirmation_token_payment_method_preview_link import (
+        ConfirmationTokenPaymentMethodPreviewLink,
+    )
     from .schemas.confirmation_tokens_resource_mandate_data import (
         ConfirmationTokensResourceMandateData,
     )
@@ -1112,6 +1125,78 @@ if TYPE_CHECKING:
     from .schemas.payment_flows_automatic_payment_methods_setup_intent import (
         PaymentFlowsAutomaticPaymentMethodsSetupIntent,
     )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRental,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_affiliate import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryAffiliate,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_date_of_birth import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDateOfBirth,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_discounts import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDiscounts,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_distance import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDistance,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_driver import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDriver,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_extra_charge import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryExtraCharge,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_insurance import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryInsurance,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_location import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryLocation,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_tax import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTax,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_tax_item import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTaxItem,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_total import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTotal,
+    )
+    from .schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_vehicle import (
+        PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryVehicle,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodging,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_accommodation import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAccommodation,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_affiliate import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAffiliate,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_discount import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryDiscount,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_extra_charge import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryExtraCharge,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_guest import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryGuest,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_host import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryHost,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_insurance import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryInsurance,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_tax import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTax,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_tax_item import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTaxItem,
+    )
+    from .schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_total import (
+        PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTotal,
+    )
     from .schemas.payment_flows_installment_options import PaymentFlowsInstallmentOptions
     from .schemas.payment_flows_payment_details import PaymentFlowsPaymentDetails
     from .schemas.payment_flows_payment_intent_async_workflows import (
@@ -1528,6 +1613,12 @@ if TYPE_CHECKING:
     from .schemas.payment_method_details_konbini import PaymentMethodDetailsKonbini
     from .schemas.payment_method_details_kr_card import PaymentMethodDetailsKrCard
     from .schemas.payment_method_details_link import PaymentMethodDetailsLink
+    from .schemas.payment_method_details_link_funding_source import (
+        PaymentMethodDetailsLinkFundingSource,
+    )
+    from .schemas.payment_method_details_link_funding_source_card import (
+        PaymentMethodDetailsLinkFundingSourceCard,
+    )
     from .schemas.payment_method_details_mb_way import PaymentMethodDetailsMbWay
     from .schemas.payment_method_details_mobilepay import PaymentMethodDetailsMobilepay
     from .schemas.payment_method_details_multibanco import PaymentMethodDetailsMultibanco
@@ -2141,6 +2232,7 @@ if TYPE_CHECKING:
     from .schemas.refund_destination_details_afterpay_clearpay import (
         RefundDestinationDetailsAfterpayClearpay,
     )
+    from .schemas.refund_destination_details_bizum import RefundDestinationDetailsBizum
     from .schemas.refund_destination_details_blik import RefundDestinationDetailsBlik
     from .schemas.refund_destination_details_br_bank_transfer import (
         RefundDestinationDetailsBrBankTransfer,
@@ -2168,6 +2260,7 @@ if TYPE_CHECKING:
     from .schemas.refund_destination_details_th_bank_transfer import (
         RefundDestinationDetailsThBankTransfer,
     )
+    from .schemas.refund_destination_details_upi import RefundDestinationDetailsUpi
     from .schemas.refund_destination_details_us_bank_transfer import (
         RefundDestinationDetailsUsBankTransfer,
     )
@@ -2456,6 +2549,7 @@ if TYPE_CHECKING:
     from .schemas.subscription_payment_method_options_sepa_debit import (
         SubscriptionPaymentMethodOptionsSepaDebit,
     )
+    from .schemas.subscription_payment_method_options_upi import SubscriptionPaymentMethodOptionsUpi
     from .schemas.subscription_pending_invoice_item_interval import (
         SubscriptionPendingInvoiceItemInterval,
     )
@@ -2853,6 +2947,9 @@ if TYPE_CHECKING:
     from .schemas.treasury_inbound_transfers_resource_failure_details import (
         TreasuryInboundTransfersResourceFailureDetails,
     )
+    from .schemas.treasury_inbound_transfers_resource_failure_details_resource_network_details import (
+        TreasuryInboundTransfersResourceFailureDetailsResourceNetworkDetails,
+    )
     from .schemas.treasury_inbound_transfers_resource_inbound_transfer_resource_linked_flows import (
         TreasuryInboundTransfersResourceInboundTransferResourceLinkedFlows,
     )
@@ -2933,6 +3030,12 @@ if TYPE_CHECKING:
     from .schemas.treasury_shared_resource_billing_details import (
         TreasurySharedResourceBillingDetails,
     )
+    from .schemas.treasury_shared_resource_failure_details_ach import (
+        TreasurySharedResourceFailureDetailsAch,
+    )
+    from .schemas.treasury_shared_resource_failure_details_network_details import (
+        TreasurySharedResourceFailureDetailsNetworkDetails,
+    )
     from .schemas.treasury_shared_resource_initiating_payment_method_details_initiating_payment_method_details import (
         TreasurySharedResourceInitiatingPaymentMethodDetailsInitiatingPaymentMethodDetails,
     )
@@ -3009,6 +3112,7 @@ __all__ = [
     "AutomaticTax",
     "Balance",
     "BalanceAmount",
+    "BalanceAmountAvailable",
     "BalanceAmountBySourceType",
     "BalanceAmountNet",
     "BalanceAvailable",
@@ -3194,6 +3298,10 @@ __all__ = [
     "ClimateRemovalsProductsPrice",
     "ClimateSupplier",
     "ConfirmationToken",
+    "ConfirmationTokenPaymentMethodPreviewCard",
+    "ConfirmationTokenPaymentMethodPreviewCardWallet",
+    "ConfirmationTokenPaymentMethodPreviewCardWalletLink",
+    "ConfirmationTokenPaymentMethodPreviewLink",
     "ConfirmationTokensResourceMandateData",
     "ConfirmationTokensResourceMandateDataResourceCustomerAcceptance",
     "ConfirmationTokensResourceMandateDataResourceCustomerAcceptanceResourceOnline",
@@ -3634,6 +3742,30 @@ __all__ = [
     "PaymentFlowsAmountDetailsResourceTax",
     "PaymentFlowsAutomaticPaymentMethodsPaymentIntent",
     "PaymentFlowsAutomaticPaymentMethodsSetupIntent",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRental",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryAffiliate",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDateOfBirth",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDiscounts",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDistance",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDriver",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryExtraCharge",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryInsurance",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryLocation",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTax",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTaxItem",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTotal",
+    "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryVehicle",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodging",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAccommodation",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAffiliate",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryDiscount",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryExtraCharge",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryGuest",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryHost",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryInsurance",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTax",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTaxItem",
+    "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTotal",
     "PaymentFlowsInstallmentOptions",
     "PaymentFlowsPaymentDetails",
     "PaymentFlowsPaymentIntentAsyncWorkflows",
@@ -3842,6 +3974,8 @@ __all__ = [
     "PaymentMethodDetailsKonbini",
     "PaymentMethodDetailsKrCard",
     "PaymentMethodDetailsLink",
+    "PaymentMethodDetailsLinkFundingSource",
+    "PaymentMethodDetailsLinkFundingSourceCard",
     "PaymentMethodDetailsMbWay",
     "PaymentMethodDetailsMobilepay",
     "PaymentMethodDetailsMultibanco",
@@ -4196,6 +4330,7 @@ __all__ = [
     "RefundCreated",
     "RefundDestinationDetails",
     "RefundDestinationDetailsAfterpayClearpay",
+    "RefundDestinationDetailsBizum",
     "RefundDestinationDetailsBlik",
     "RefundDestinationDetailsBrBankTransfer",
     "RefundDestinationDetailsCard",
@@ -4211,6 +4346,7 @@ __all__ = [
     "RefundDestinationDetailsPaypal",
     "RefundDestinationDetailsSwish",
     "RefundDestinationDetailsThBankTransfer",
+    "RefundDestinationDetailsUpi",
     "RefundDestinationDetailsUsBankTransfer",
     "RefundFailed",
     "RefundNextAction",
@@ -4377,6 +4513,7 @@ __all__ = [
     "SubscriptionPaymentMethodOptionsMandateOptionsPix",
     "SubscriptionPaymentMethodOptionsPix",
     "SubscriptionPaymentMethodOptionsSepaDebit",
+    "SubscriptionPaymentMethodOptionsUpi",
     "SubscriptionPendingInvoiceItemInterval",
     "SubscriptionSchedule",
     "SubscriptionScheduleAborted",
@@ -4574,6 +4711,7 @@ __all__ = [
     "TreasuryInboundTransferFailed",
     "TreasuryInboundTransferSucceeded",
     "TreasuryInboundTransfersResourceFailureDetails",
+    "TreasuryInboundTransfersResourceFailureDetailsResourceNetworkDetails",
     "TreasuryInboundTransfersResourceInboundTransferResourceLinkedFlows",
     "TreasuryInboundTransfersResourceInboundTransferResourceStatusTransitions",
     "TreasuryOutboundPayment",
@@ -4618,6 +4756,8 @@ __all__ = [
     "TreasuryReceivedDebitsResourceReversalDetails",
     "TreasuryReceivedDebitsResourceStatusTransitions",
     "TreasurySharedResourceBillingDetails",
+    "TreasurySharedResourceFailureDetailsAch",
+    "TreasurySharedResourceFailureDetailsNetworkDetails",
     "TreasurySharedResourceInitiatingPaymentMethodDetailsInitiatingPaymentMethodDetails",
     "TreasurySharedResourceInitiatingPaymentMethodDetailsUsBankAccount",
     "TreasuryTransaction",
@@ -4693,6 +4833,7 @@ __getattr__, __dir__ = lazy_exports(
         "AutomaticTax": ".schemas.account",
         "Balance": ".schemas.balance",
         "BalanceAmount": ".schemas.balance_amount",
+        "BalanceAmountAvailable": ".schemas.balance_amount_available",
         "BalanceAmountBySourceType": ".schemas.balance_amount_by_source_type",
         "BalanceAmountNet": ".schemas.balance_amount_net",
         "BalanceAvailable": ".schemas.balance_available",
@@ -4878,6 +5019,10 @@ __getattr__, __dir__ = lazy_exports(
         "ClimateRemovalsProductsPrice": ".schemas.climate_removals_products_price",
         "ClimateSupplier": ".schemas.climate_supplier",
         "ConfirmationToken": ".schemas.confirmation_token",
+        "ConfirmationTokenPaymentMethodPreviewCard": ".schemas.confirmation_token_payment_method_preview_card",
+        "ConfirmationTokenPaymentMethodPreviewCardWallet": ".schemas.confirmation_token_payment_method_preview_card_wallet",
+        "ConfirmationTokenPaymentMethodPreviewCardWalletLink": ".schemas.confirmation_token_payment_method_preview_card_wallet_link",
+        "ConfirmationTokenPaymentMethodPreviewLink": ".schemas.confirmation_token_payment_method_preview_link",
         "ConfirmationTokensResourceMandateData": ".schemas.confirmation_tokens_resource_mandate_data",
         "ConfirmationTokensResourceMandateDataResourceCustomerAcceptance": ".schemas.confirmation_tokens_resource_mandate_data_resource_customer_acceptance",
         "ConfirmationTokensResourceMandateDataResourceCustomerAcceptanceResourceOnline": ".schemas.confirmation_tokens_resource_mandate_data_resource_customer_acceptance_resource_online",
@@ -5318,6 +5463,30 @@ __getattr__, __dir__ = lazy_exports(
         "PaymentFlowsAmountDetailsResourceTax": ".schemas.payment_flows_amount_details_resource_tax",
         "PaymentFlowsAutomaticPaymentMethodsPaymentIntent": ".schemas.payment_flows_automatic_payment_methods_payment_intent",
         "PaymentFlowsAutomaticPaymentMethodsSetupIntent": ".schemas.payment_flows_automatic_payment_methods_setup_intent",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRental": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryAffiliate": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_affiliate",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDateOfBirth": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_date_of_birth",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDiscounts": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_discounts",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDistance": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_distance",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryDriver": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_driver",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryExtraCharge": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_extra_charge",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryInsurance": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_insurance",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryLocation": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_location",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTax": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_tax",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTaxItem": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_tax_item",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryTotal": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_total",
+        "PaymentFlowsIndustryMetadataCarRentalDataResourceCarRentalSupplementaryVehicle": ".schemas.payment_flows_industry_metadata_car_rental_data_resource_car_rental_supplementary_vehicle",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodging": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAccommodation": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_accommodation",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryAffiliate": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_affiliate",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryDiscount": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_discount",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryExtraCharge": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_extra_charge",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryGuest": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_guest",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryHost": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_host",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryInsurance": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_insurance",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTax": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_tax",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTaxItem": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_tax_item",
+        "PaymentFlowsIndustryMetadataLodgingDataResourceLodgingSupplementaryTotal": ".schemas.payment_flows_industry_metadata_lodging_data_resource_lodging_supplementary_total",
         "PaymentFlowsInstallmentOptions": ".schemas.payment_flows_installment_options",
         "PaymentFlowsPaymentDetails": ".schemas.payment_flows_payment_details",
         "PaymentFlowsPaymentIntentAsyncWorkflows": ".schemas.payment_flows_payment_intent_async_workflows",
@@ -5526,6 +5695,8 @@ __getattr__, __dir__ = lazy_exports(
         "PaymentMethodDetailsKonbini": ".schemas.payment_method_details_konbini",
         "PaymentMethodDetailsKrCard": ".schemas.payment_method_details_kr_card",
         "PaymentMethodDetailsLink": ".schemas.payment_method_details_link",
+        "PaymentMethodDetailsLinkFundingSource": ".schemas.payment_method_details_link_funding_source",
+        "PaymentMethodDetailsLinkFundingSourceCard": ".schemas.payment_method_details_link_funding_source_card",
         "PaymentMethodDetailsMbWay": ".schemas.payment_method_details_mb_way",
         "PaymentMethodDetailsMobilepay": ".schemas.payment_method_details_mobilepay",
         "PaymentMethodDetailsMultibanco": ".schemas.payment_method_details_multibanco",
@@ -5880,6 +6051,7 @@ __getattr__, __dir__ = lazy_exports(
         "RefundCreated": ".schemas.refund_created",
         "RefundDestinationDetails": ".schemas.refund_destination_details",
         "RefundDestinationDetailsAfterpayClearpay": ".schemas.refund_destination_details_afterpay_clearpay",
+        "RefundDestinationDetailsBizum": ".schemas.refund_destination_details_bizum",
         "RefundDestinationDetailsBlik": ".schemas.refund_destination_details_blik",
         "RefundDestinationDetailsBrBankTransfer": ".schemas.refund_destination_details_br_bank_transfer",
         "RefundDestinationDetailsCard": ".schemas.refund_destination_details_card",
@@ -5895,6 +6067,7 @@ __getattr__, __dir__ = lazy_exports(
         "RefundDestinationDetailsPaypal": ".schemas.refund_destination_details_paypal",
         "RefundDestinationDetailsSwish": ".schemas.refund_destination_details_swish",
         "RefundDestinationDetailsThBankTransfer": ".schemas.refund_destination_details_th_bank_transfer",
+        "RefundDestinationDetailsUpi": ".schemas.refund_destination_details_upi",
         "RefundDestinationDetailsUsBankTransfer": ".schemas.refund_destination_details_us_bank_transfer",
         "RefundFailed": ".schemas.refund_failed",
         "RefundNextAction": ".schemas.refund_next_action",
@@ -6061,6 +6234,7 @@ __getattr__, __dir__ = lazy_exports(
         "SubscriptionPaymentMethodOptionsMandateOptionsPix": ".schemas.subscription_payment_method_options_mandate_options_pix",
         "SubscriptionPaymentMethodOptionsPix": ".schemas.subscription_payment_method_options_pix",
         "SubscriptionPaymentMethodOptionsSepaDebit": ".schemas.subscription_payment_method_options_sepa_debit",
+        "SubscriptionPaymentMethodOptionsUpi": ".schemas.subscription_payment_method_options_upi",
         "SubscriptionPendingInvoiceItemInterval": ".schemas.subscription_pending_invoice_item_interval",
         "SubscriptionSchedule": ".schemas.account",
         "SubscriptionScheduleAborted": ".schemas.subscription_schedule_aborted",
@@ -6258,6 +6432,7 @@ __getattr__, __dir__ = lazy_exports(
         "TreasuryInboundTransferFailed": ".schemas.treasury_inbound_transfer_failed",
         "TreasuryInboundTransferSucceeded": ".schemas.treasury_inbound_transfer_succeeded",
         "TreasuryInboundTransfersResourceFailureDetails": ".schemas.treasury_inbound_transfers_resource_failure_details",
+        "TreasuryInboundTransfersResourceFailureDetailsResourceNetworkDetails": ".schemas.treasury_inbound_transfers_resource_failure_details_resource_network_details",
         "TreasuryInboundTransfersResourceInboundTransferResourceLinkedFlows": ".schemas.treasury_inbound_transfers_resource_inbound_transfer_resource_linked_flows",
         "TreasuryInboundTransfersResourceInboundTransferResourceStatusTransitions": ".schemas.treasury_inbound_transfers_resource_inbound_transfer_resource_status_transitions",
         "TreasuryOutboundPayment": ".schemas.treasury_credit_reversal",
@@ -6302,6 +6477,8 @@ __getattr__, __dir__ = lazy_exports(
         "TreasuryReceivedDebitsResourceReversalDetails": ".schemas.treasury_received_debits_resource_reversal_details",
         "TreasuryReceivedDebitsResourceStatusTransitions": ".schemas.treasury_received_debits_resource_status_transitions",
         "TreasurySharedResourceBillingDetails": ".schemas.treasury_shared_resource_billing_details",
+        "TreasurySharedResourceFailureDetailsAch": ".schemas.treasury_shared_resource_failure_details_ach",
+        "TreasurySharedResourceFailureDetailsNetworkDetails": ".schemas.treasury_shared_resource_failure_details_network_details",
         "TreasurySharedResourceInitiatingPaymentMethodDetailsInitiatingPaymentMethodDetails": ".schemas.treasury_shared_resource_initiating_payment_method_details_initiating_payment_method_details",
         "TreasurySharedResourceInitiatingPaymentMethodDetailsUsBankAccount": ".schemas.treasury_shared_resource_initiating_payment_method_details_us_bank_account",
         "TreasuryTransaction": ".schemas.treasury_credit_reversal",
