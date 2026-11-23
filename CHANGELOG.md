@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0](https://github.com/dougyouch/stripe-apiroute/compare/v0.3.1...v0.4.0) (2026-11-23)
+
+### Features
+
+- feat(specs): update the client from Stripe's latest API spec (a85521a)
+
 ## [0.3.1](https://github.com/dougyouch/stripe-apiroute/compare/v0.3.0...v0.3.1) (2026-11-09)
 
 ### Fixes
